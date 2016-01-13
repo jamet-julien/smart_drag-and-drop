@@ -1,0 +1,147 @@
+    body, html{
+        font-family: Arial, Helvetica, sans-serif;
+        padding    : 0;
+        margin     : 0;
+    }
+
+    *{
+        box-sizing:border-box;
+    }
+/*
+        db       .d8b.  db    db d8b   db  .o88b. db   db d88888b d8888b.      d8888b.  .d8b.   d888b  d88888b
+        88      d8' `8b 88    88 888o  88 d8P  Y8 88   88 88'     88  `8D      88  `8D d8' `8b 88' Y8b 88'
+        88      88ooo88 88    88 88V8o 88 8P      88ooo88 88ooooo 88oobY'      88oodD' 88ooo88 88      88ooooo
+        88      88~~~88 88    88 88 V8o88 8b      88~~~88 88~~~~~ 88`8b        88~~~   88~~~88 88  ooo 88~~~~~
+        88booo. 88   88 88b  d88 88  V888 Y8b  d8 88   88 88.     88 `88.      88      88   88 88. ~8~ 88.
+        Y88888P YP   YP ~Y8888P' VP   V8P  `Y88P' YP   YP Y88888P 88   YD      88      YP   YP  Y888P  Y88888P
+*/
+
+    .launch {
+        background           : #3498db;
+        background-image     : -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image     : -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image     : -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image     : -o-linear-gradient(top, #3498db, #2980b9);
+        background-image     : linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 28;
+        -moz-border-radius   : 28;
+        border-radius        : 19px;
+        font-family          : Arial;
+        color                : #ffffff;
+        font-size            : 31px;
+        padding              : 10px 20px 10px 20px;
+        text-decoration      : none;
+        display              : inline-block;
+        text-align           : center;
+        margin               : auto;
+        margin-top           : 33vh;
+        cursor               : pointer;
+    }
+
+    .launch:hover {
+        background      : #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration : none;
+    }
+
+/*
+        .88b  d88.  .d8b.  d888888b d8b   db      d8888b.  .d8b.   d888b  d88888b
+        88'YbdP`88 d8' `8b   `88'   888o  88      88  `8D d8' `8b 88' Y8b 88'
+        88  88  88 88ooo88    88    88V8o 88      88oodD' 88ooo88 88      88ooooo
+        88  88  88 88~~~88    88    88 V8o88      88~~~   88~~~88 88  ooo 88~~~~~
+        88  88  88 88   88   .88.   88  V888      88      88   88 88. ~8~ 88.
+        YP  YP  YP YP   YP Y888888P VP   V8P      88      YP   YP  Y888P  Y88888P
+*/
+
+    .dragover{
+        outline : green 1px solid;
+    }
+
+    .source{
+        display:inline-block;
+        background-color: green;
+        margin-right:5px;
+        padding:10px;
+    }
+
+    #carte{
+        width : 600px;
+        height : 450px;
+        background-color : grey;
+    }
+
+    .drop{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(127, 127, 127);
+        min-height: 100px;
+    }
+
+    .btnMap{
+        cursor: pointer;
+        background-color:#333;
+        color:#fff;
+        text-align:center;
+    }
+
+    .btnMap:hover{
+        background-color:#80D6F9;
+        color:#FFF;
+    }
+
+    .w--str{
+        width           : 100%;
+        padding         : 0;
+        margin          : 0;
+        position          : relative;
+        height          : 100%;
+    }
+        .w--str-item{
+                list-style: none;
+                display   : block;
+                padding   : 0;
+                margin    : 0;
+                position  : relative;
+                width     : 100%;
+        }
+            .w--str-module{
+                border    : none;
+                background: transparent;
+                height    : 180px;
+                width     : 100%;
+            }
+
+            .w--str-edit{
+                position: absolute;
+                bottom  : 0;
+                top     : 0;
+                left    : 0;
+                right   : 0;
+
+            }
+
+/*
+    d888888b  .d88b.   .d88b.  db           d8888b.  .d8b.   d888b  d88888b
+    `~~88~~' .8P  Y8. .8P  Y8. 88           88  `8D d8' `8b 88' Y8b 88'
+       88    88    88 88    88 88           88oodD' 88ooo88 88      88ooooo
+       88    88    88 88    88 88           88~~~   88~~~88 88  ooo 88~~~~~
+       88    `8b  d8' `8b  d8' 88booo.      88      88   88 88. ~8~ 88.
+       YP     `Y88P'   `Y88P'  Y88888P      88      YP   YP  Y888P  Y88888P
+*/
+
+    .tool{
+        background-color : #272822;
+        color : #ccc;
+    }
+
+    .ressource{
+        cursor:move;
+    }
+
+    .ressource:hover{
+        outline: 1px solid #80D6F9;
+    }
